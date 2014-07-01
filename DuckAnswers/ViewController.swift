@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        var api = Api()
+        api.appName = "DuckAnswer"
+        api.queryInstantAnswer("duck", result: {(answer: Answer?, success: Bool, error: NSError?) in
+            println(success)
+            })
     }
 
     override func didReceiveMemoryWarning() {

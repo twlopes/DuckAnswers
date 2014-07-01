@@ -12,6 +12,11 @@
 		8601B0B1195C01E700A71554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8601B0AF195C01E700A71554 /* Main.storyboard */; };
 		8601B0B3195C01E700A71554 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8601B0B2195C01E700A71554 /* Images.xcassets */; };
 		8601B0BF195C01E800A71554 /* DuckAnswersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8601B0BE195C01E800A71554 /* DuckAnswersTests.swift */; };
+		8601B0CA195C020700A71554 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8601B0C9195C020700A71554 /* Api.swift */; };
+		8601B0CD195C098300A71554 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8601B0CC195C098300A71554 /* Answer.swift */; };
+		8601B0D0195C472D00A71554 /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8601B0CF195C472D00A71554 /* JSONValue.swift */; };
+		8601B0D2195C671200A71554 /* RelatedTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8601B0D1195C671200A71554 /* RelatedTopic.swift */; };
+		8658E7A31961479C00DBAEE3 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658E7A21961479C00DBAEE3 /* Icon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,11 @@
 		8601B0B8195C01E800A71554 /* DuckAnswersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuckAnswersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8601B0BD195C01E800A71554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8601B0BE195C01E800A71554 /* DuckAnswersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckAnswersTests.swift; sourceTree = "<group>"; };
+		8601B0C9195C020700A71554 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		8601B0CC195C098300A71554 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		8601B0CF195C472D00A71554 /* JSONValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONValue.swift; sourceTree = "<group>"; };
+		8601B0D1195C671200A71554 /* RelatedTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedTopic.swift; sourceTree = "<group>"; };
+		8658E7A21961479C00DBAEE3 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,8 @@
 		8601B0A8195C01E700A71554 /* DuckAnswers */ = {
 			isa = PBXGroup;
 			children = (
+				8601B0CB195C021C00A71554 /* Models */,
+				8601B0C8195C01EF00A71554 /* API */,
 				8601B0AB195C01E700A71554 /* AppDelegate.swift */,
 				8601B0AD195C01E700A71554 /* ViewController.swift */,
 				8601B0AF195C01E700A71554 /* Main.storyboard */,
@@ -107,6 +119,25 @@
 				8601B0BD195C01E800A71554 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8601B0C8195C01EF00A71554 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8601B0C9195C020700A71554 /* Api.swift */,
+				8601B0CF195C472D00A71554 /* JSONValue.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		8601B0CB195C021C00A71554 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8601B0CC195C098300A71554 /* Answer.swift */,
+				8601B0D1195C671200A71554 /* RelatedTopic.swift */,
+				8658E7A21961479C00DBAEE3 /* Icon.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8601B0CA195C020700A71554 /* Api.swift in Sources */,
+				8601B0D2195C671200A71554 /* RelatedTopic.swift in Sources */,
+				8658E7A31961479C00DBAEE3 /* Icon.swift in Sources */,
 				8601B0AE195C01E700A71554 /* ViewController.swift in Sources */,
 				8601B0AC195C01E700A71554 /* AppDelegate.swift in Sources */,
+				8601B0CD195C098300A71554 /* Answer.swift in Sources */,
+				8601B0D0195C472D00A71554 /* JSONValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +435,7 @@
 				8601B0C4195C01E800A71554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8601B0C5195C01E800A71554 /* Build configuration list for PBXNativeTarget "DuckAnswersTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +444,7 @@
 				8601B0C7195C01E800A71554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
